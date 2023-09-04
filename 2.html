@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Enhanced Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <style>
+        /* Additional CSS styles for enhancements */
+        /* Add custom fonts and styles as needed */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('"D:\Old\Code\1\male0001.png"');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero-text {
+            font-size: 24px;
+            animation: fadeInOut 4s ease-in-out infinite alternate;
+        }
+        .btn-primary {
+            background-color: #ff5733;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #ff451a;
+        }
+        /* Add more custom styles for other sections and elements */
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <h3><b>Toha</b>*</h3>
+        <button class="btn-primary">APRIL, 2023</button>
+    </div>
+    <div id="main">
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1><b>তোহা <i>Noob</i></b> <span>Copy</span>  Marse <span><i>!.</i></span></h1>
+            </div>
+            <canvas></canvas>
+        </div>
+        <!-- Rest of your sections with enhanced styling -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // JavaScript code for enhanced animations and interactions
+        // Add your JavaScript enhancements here
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Example animation on scroll
+        gsap.from(".hero-text", {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".hero-text",
+                start: "top center",
+                end: "bottom center",
+                scrub: 1,
+            },
+        });
+
+        // Additional animations and interactions can be added as needed
+    </script>
+</body>
+</html>
